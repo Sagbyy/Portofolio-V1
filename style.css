@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*,
-*::before,
-*::after{
+*, ::before, ::after{
     margin: 0;
     padding: 0;
     font-family: "Kanit", sans-serif;
@@ -74,12 +72,6 @@ html{
 .slide-link:hover span{
     transform: translateX(-100%);
 }
-
-
-
-
-
-
 
 /*Acceuil*/
 
@@ -263,67 +255,32 @@ section {
         border-radius: 10px;
         color: #fff;
     }
+    .title-competences {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
-    /*SKILL*/
+    .skill_item svg {
+        margin-right: 10px;
+    }
 
-        .skill-item .progress-title {
-            position: relative;
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #fff;
-        }
+    .skill_item {
+        background: #212020;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 7px;
+        font-size: 20px;
+        font-weight: 300;
+        transition: background 0.2s ease-in-out;
+        display: inline-block;
+    }
 
-        .skill-item .progress {
-            position: relative;
-            height: 8px;
-            background-color: #0e0f10;
-            margin-bottom: 40px;
-            overflow: visible;
-            width: 95%;
-        }
-
-
-        .skill-item .progress .progress-bar {
-            position: relative;
-            background-color: #ffe04b;
-            -webkit-border-radius: 10px;
-                    border-radius: 10px;
-            overflow: visible;
-            animation: animate-progress 2s ease 0s 1 normal;
-            opacity: 1;
-            visibility: visible;
-        }
+    .skill_item:hover {
+        background: #3f3e3e;
+    }
 
 
-        .skill-item .progress .progress-value {
-            position: absolute;
-            top: -32px;
-            right: 0;
-            color: #fff;
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .skill-item .progress .progress-bar:after {
-            border: 3px solid #fff !important;
-        }
-
-        .skill-item .progress-value::after{
-            position: absolute;
-            content: "";
-            border-top: 8px solid #fff;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            top: 104%;
-            left: 0;
-        }
-
-
-        @keyframes animate-progress {
-            0% {
-                width: 0%;
-            }
-        }
 
 
 
