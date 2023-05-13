@@ -1,3 +1,7 @@
+/** Vercel Analytic */
+import { inject } from "@vercel/analytics/*";
+
+inject()
 
 $(window).on("load", function() {
     $(".animate").fadeOut(5000);
